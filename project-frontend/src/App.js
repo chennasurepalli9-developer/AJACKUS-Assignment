@@ -2,26 +2,27 @@ import { Component } from "react";
 
 import "./App.css";
 
-class app extends Component {
+class App extends Component {
   render(){
     return(
-      <>
-        <h1>User Details</h1>
-      <form>
-        <label>Id</label>
-        <input type="text" />
-        <label>First Name</label>
-        <input type="text" />
-        <label>Last Name</label>
-        <input type="text" />
-        <label>Email</label>
-        <input type="text" />
-        <label>Department</label>
-        <input type="text" />
+      <div className="bg-container">
+      <h1 className="heading">User Details</h1>
+      <form className="form-container">
+        <label className="label">Id</label>
+        <input type="text" className="input-elements" />
+        <label className="label">First Name</label>
+        <input type="text" className="input-elements" />
+        <label className="label">Last Name</label>
+        <input type="text" className="input-elements" />
+        <label className="label">Email</label>
+        <input type="text" className="input-elements" />
+        <label className="label">Department</label>
+        <input type="text" className="input-elements" />
+        <button className="add-button" type="submit">Add</button>
       </form>
-      </>
+      </div>
     )
   }
 }
 
-export default app
+export default App
